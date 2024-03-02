@@ -1,4 +1,6 @@
-﻿namespace KaijiCardGame.Domain
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace KaijiCardGame.Domain
 {
     public class Player
     {
@@ -10,5 +12,7 @@
         public int ExperiencePoints { get; set; }
         public Country Country { get; set; } = new Country();
         public ICollection<Game> Games { get; } = new List<Game>();
+        public User User { get; set; } = new User();
+        public string UserId { get; set; } = "";
     }
 }

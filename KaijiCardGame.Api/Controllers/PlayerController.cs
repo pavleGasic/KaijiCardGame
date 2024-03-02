@@ -5,11 +5,11 @@ namespace KaijiCardGame.Api.Controllers
 {
     public class PlayerController : Controller
     {
-        private readonly GameContext _gameContext;
+        private readonly DbContext _dbContext;
 
-        public PlayerController(GameContext gameContext)
+        public PlayerController(DbContext dbContext)
         {
-            _gameContext = gameContext;
+            _dbContext = dbContext;
         }
         
     }

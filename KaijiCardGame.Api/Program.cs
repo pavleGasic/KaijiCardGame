@@ -1,5 +1,8 @@
+using KaijiCardGame.Domain;
 using KaijiCardGame.Infrastructure;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using DbContext = KaijiCardGame.Infrastructure.DbContext;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,10 +13,23 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<GameContext>(options =>
+builder.Services.AddDbContext<DbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
+
+builder.Services.AddIdentityCore<User>(options =>
+{
+    options.Password.RequiredLength = 6;
+
+    options.SignIn.RequireConfirmedEmail = true;
+})
+    .AddRoles<IdentityRole>()
+    .AddRoleManager<RoleManager<IdentityRole>>()
+    .AddEntityFrameworkStores<DbContext>()
+    .AddSignInManager<SignInManager<User>>()
+    .AddUserManager<UserManager<User>>()
+    .AddDefaultTokenProviders();
 
 var app = builder.Build();
 
