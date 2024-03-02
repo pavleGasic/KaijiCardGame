@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KaijiCardGame.Api", "KaijiCardGame.Api\KaijiCardGame.Api.csproj", "{72E512FF-82F4-409D-B03D-6B2C1F1FD312}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KaijiCardGame.Infrastructure", "KaijiCardGame.Infrastructure\KaijiCardGame.Infrastructure.csproj", "{91A785F0-F345-4C42-97C1-376CC3DC6882}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KaijiCardGame.Domain", "KaijiCardGame.Domain\KaijiCardGame.Domain.csproj", "{BEBB754E-FC9E-403D-9752-7EF3E7872B62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KaijiCardGame.Services", "KaijiCardGame.Services\KaijiCardGame.Services.csproj", "{A5475856-D6AA-4B63-A7AF-F68AA0DD1135}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{72E512FF-82F4-409D-B03D-6B2C1F1FD312}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72E512FF-82F4-409D-B03D-6B2C1F1FD312}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72E512FF-82F4-409D-B03D-6B2C1F1FD312}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72E512FF-82F4-409D-B03D-6B2C1F1FD312}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91A785F0-F345-4C42-97C1-376CC3DC6882}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91A785F0-F345-4C42-97C1-376CC3DC6882}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91A785F0-F345-4C42-97C1-376CC3DC6882}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91A785F0-F345-4C42-97C1-376CC3DC6882}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEBB754E-FC9E-403D-9752-7EF3E7872B62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEBB754E-FC9E-403D-9752-7EF3E7872B62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEBB754E-FC9E-403D-9752-7EF3E7872B62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEBB754E-FC9E-403D-9752-7EF3E7872B62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5475856-D6AA-4B63-A7AF-F68AA0DD1135}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5475856-D6AA-4B63-A7AF-F68AA0DD1135}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5475856-D6AA-4B63-A7AF-F68AA0DD1135}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5475856-D6AA-4B63-A7AF-F68AA0DD1135}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6FF206CF-E163-44C6-BCEC-120CE6E497B3}
+	EndGlobalSection
+EndGlobal
